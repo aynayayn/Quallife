@@ -1,0 +1,69 @@
+.shelter-carousel{
+    margin-top: 50px;
+}
+.shelter-carousel-inner img{
+    width: 100%;
+}
+.shelter-carousel-inner{
+    overflow: hidden;
+}
+.index-icon{
+    margin-top: 60px;
+}
+.index-icon .shelter-thumbnail{
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+.index-icon .caption a{
+    text-decoration: none;
+    color: black;
+}
+@media (max-width:500px){
+    .shelter-carousel .shelter-carousel-inner{
+        /* height: 180px; */
+        height: auto;
+    }
+    .shelter-carousel .shelter-carousel-inner .shelter-carousel-caption{
+        bottom: 14%;
+    }
+    .shelter-carousel .shelter-carousel-inner .shelter-carousel-caption h2{
+        font-size: 18px;
+    }
+}
+@media (min-width:500px) and (max-width:768px){
+    .shelter-carousel .shelter-carousel-inner{
+        /* height: 320px; */
+        height: auto;
+    }
+    .shelter-carousel .shelter-carousel-inner .shelter-carousel-caption{
+        bottom: 14%;
+    }
+    .shelter-carousel .shelter-carousel-inner .shelter-carousel-caption h2{
+        font-size: 24px;
+    }
+}
+@media (min-width:768px) and (max-width:992px){
+    .shelter-carousel .shelter-carousel-inner{
+        height: 460px;
+    }
+    .shelter-carousel .shelter-carousel-inner .shelter-carousel-caption{
+        bottom: 22%;
+    }
+}
+@media (min-width:992px) and (max-width:1200px){
+    .shelter-carousel .shelter-carousel-inner{
+        height: 520px;
+    }
+    .shelter-carousel .shelter-carousel-inner .shelter-carousel-caption{
+        bottom: 26%;
+    }
+}
+@media (min-width:1200px){
+    .shelter-carousel .shelter-carousel-inner{
+        height: 550px;
+    }
+    .shelter-carousel .shelter-carousel-inner .shelter-carousel-caption{
+        bottom: 44%;
+    }
+}

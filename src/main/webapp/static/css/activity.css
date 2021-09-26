@@ -1,0 +1,79 @@
+.shelter-container{
+    margin-top: 80px;
+}
+[class*="activity-"]{
+    border: 1px solid lightgrey;
+    border-radius: .6em;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+h2.title{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(87, 86, 86);
+}
+p.pos-city{
+    color: gray;
+}
+hr.fenge{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+[class*="activity-"] [class*="pic-desc-"] img{
+    width: 100%;
+}
+/* 去除点击按钮后出现的黑色边框 ，注意权重够不够的问题*/
+.shelter-container .btn-section .btn:focus,
+.shelter-container .btn-section .btn:active:focus,
+.shelter-container .btn-section .btn.active:focus,
+.shelter-container .btn-section .btn.focus,
+.shelter-container .btn-section .btn:active.focus,
+.shelter-container .btn-section .btn.active.focus {
+    outline: none;
+    box-shadow:none;
+}
+/* 原材料的文字展示高度设置为40px，最多展示两行，多的用省略号 */
+p.ingredient{
+    height: 40px;
+    /* 必须得有下面这句 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+/* 回到顶部按钮样式 */
+#back_top .arrow{
+    border: 9px solid transparent;
+    border-bottom-color: #3DA0DB;
+    width: 0px;
+    height: 0px;
+    top:0px
+}
+#back_top .stick{
+    width: 8px;
+    height: 14px;
+    border-radius: 1px;
+    background-color: #3DA0DB;
+    top:15px;
+}
+#back_top div{
+    position: absolute;
+    margin: auto;
+    right: 0px;
+    left: 0px;
+}
+#back_top{
+    background-color: #dddddd;
+    height: 38px;
+    width: 38px;
+    border-radius: 3px;
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+}

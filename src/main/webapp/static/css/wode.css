@@ -1,0 +1,343 @@
+li{
+    list-style: none;
+}
+.shelter-navbar,
+.container-myself .left-navbar ul.item-list li a{
+    font-family: SimSun;
+}
+.container-myself{
+    margin-top: 50px;
+    width: 100%;
+}
+/* 左侧固定宽度导航栏，右边主体内容且自适应宽度区域都设置为浮动 */
+.container-myself .right-main,.container-myself .left-navbar{
+    float: left;
+}
+/* 右边自适应宽度区域的宽度设置100% */
+.container-myself .right-main{
+    width: 100%;
+}
+/* 设置左边固定内容区域的margin-left值和固定width值 */
+.container-myself .left-navbar{
+    /* margin-left: -100%; */
+    position:fixed;
+    width: 200px;
+    background-color: rgb(199, 199, 199);
+}
+/* 右边自适应宽度区域里面的实际内容存放区域的margin-left值设置为左边固定区域的宽度,又因为是container-fluid类，所以width值为auto，左右各有15px的padding值 */
+.container-myself .right-main .content{
+    margin-left: 200px;
+}
+.container-myself .left-navbar ul.item-list{
+    margin-top: 35px;
+    padding-left: 0;
+}
+.container-myself .left-navbar ul.item-list li{
+    list-style: none;
+    display: block;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+}
+.container-myself .left-navbar ul.item-list li a{
+    text-decoration: none;
+    color: rgb(2, 2, 138);
+}
+.container-myself .left-navbar ul.item-list li:hover{
+    box-shadow: 0px 0px 2px 2px;
+}
+.active-my{
+    background-color: rgb(2, 2, 138);
+}
+.container-myself .left-navbar ul.item-list li.active-my a{
+    color: white;
+}
+.right-main .content .main{
+    width: auto;
+}
+.right-main .content #main-1 .mycl-food,
+.right-main .content #main-2 .myod-activity{
+    border: 2px solid rgb(2, 2, 138);
+    border-radius: .6em;
+}
+.right-main .content #main-1 .mycl-food p.title,
+.right-main .content #main-2 .myod-activity p.title
+{
+    background-color: rgb(2, 2, 138);
+    color: white;
+    font-size: 20px;
+    line-height: 50px;
+    padding-left: 20px;
+    font-family: SimSun;
+    border: 1px solid rgb(2, 2, 138);
+    border-top-right-radius: .2em;
+    border-top-left-radius: .2em;
+}
+.right-main .content #main-1 .mycl-food ul
+{
+    padding-left: 0px;
+}
+.right-main .content #main-1 .mycl-food ul li
+{
+    display: flex;
+    width: auto;
+    height: 50px;
+    font-size:18px;
+    line-height: 50px;
+    margin: 20px;
+    border: 1px solid rgb(163, 163, 248);
+    background-color: rgb(163, 163, 248);
+    border-radius: .2em;
+}
+.right-main .content #main-1 .mycl-food ul li a{
+	width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    padding-left: 10px;
+    text-decoration: none;
+    color: rgb(34, 2, 122);
+}
+.right-main .content #main-1 .mycl-food ul li button{
+	flex: 1;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    padding-left: 10px;
+    text-decoration: none;
+    color: rgb(34, 2, 122);
+}
+.right-main .content #main-2 .myod-activity .true-content div{
+    display: block;
+    width: autto;
+    height: 50px;
+    border: 1px solid rgb(163, 163, 248);
+    background-color: rgb(163, 163, 248);
+    border-radius: .2em;
+    margin: 20px;
+    overflow: hidden;
+}
+.right-main .content #main-2 .myod-activity .true-content div li
+{
+    float: left;
+}
+.right-main .content #main-2 .myod-activity .true-content div button{
+    float: right;
+}
+.right-main .content #main-2 .myod-activity .true-content div li{
+    display: block;
+    height: 50px;
+    /* 不要设置宽度；并且对里面的a进行一定设置，使得在屏幕宽度小到装不下a标签中的文字时用省略号代替 */
+    /* 可设置max-width，在屏幕特别小eg:iPhone4的时候也能使右边的按钮显示出来 */
+    max-width: 150px;
+    font-size: 18px;
+    line-height: 50px;
+    margin-left: 10px;
+}
+.right-main .content #main-2 .myod-activity .true-content div li a{
+    text-decoration: none;
+    color: rgb(34, 2, 122);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.right-main .content #main-2 .myod-activity .true-content div button{
+    width: auto;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 8%;
+    color: white;
+}
+/* 去除点击按钮后出现的黑色边框 ，注意权重够不够的问题*/
+.right-main .content #main-2 .myod-activity .true-content div button:focus,
+.right-main .content #main-2 .myod-activity .true-content div button:active:focus,
+.right-main .content #main-2 .myod-activity .true-content div button.active:focus,
+.right-main .content #main-2 .myod-activity .true-content div button.focus,
+.right-main .content #main-2 .myod-activity .true-content div button:active.focus,
+.right-main .content #main-2 .myod-activity .true-content div button.active.focus {
+    outline: none;
+    box-shadow:none;
+}
+.btn-cancle{
+   background-color: rgb(4, 165, 4);
+}
+.btn-endact{ 
+   background-color: rgb(252, 16, 16);
+}
+.right-main .content #main-3 .container{
+    margin-top: 50px;
+}
+.right-main .content #main-3 #submit{
+    background-color: rgb(2, 2, 138);
+    color: white;
+}
+/* 美食发布板块的样式 */
+.right-main .content #main-4{
+    padding-top: 20px;
+}
+.right-main .content #main-4 img{
+    width: 200px;
+    height: 200px;
+    border: 1px solid gray;
+}
+.form-horizontal .self-defi{
+    width: 65%;
+}
+.right-main .content #main-2,
+.right-main .content #main-3,
+.right-main .content #main-4,
+.right-main .content #main-5{
+    display: none;
+}
+.absolute-hg{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: rgb(199, 199, 199);
+    z-index: -1;
+}
+.btn-container{
+    position: fixed;
+    right: 40px;
+    bottom: 10px;
+    z-index: 99;
+    display: none;
+}
+.btn-container .btn-shelter{
+	width:60px;
+	height:60px;
+    border-radius: 4em;
+    transition: all .4s ease-in-out;
+
+    background-color: white;
+    border: 1px solid gainsboro;
+}
+.btn-container .btn-shelter:hover{
+    box-shadow: 0 0 4px 4px gray;
+}
+button#step-num{
+    margin-top: 3px;
+}
+/* 针对galaxyfold做的响应 */
+@media (max-width:349px){
+     /* 在屏幕宽度小于等于767px时左侧边栏消失 */
+     .container-myself .left-navbar{
+        display: none;
+    }
+    /* 在左侧边栏消失之后，右边自适应宽度区域里面的实际内容存放区域的margin-left值设置为0 */
+    .container-myself .right-main .content{
+        margin-left: 0;
+    }
+    .absolute-hg{
+        display: none;
+    }
+    .btn-container{
+        display: block;
+    }
+    .right-main .content #main-2 .myod-activity .true-content div li{
+        max-width: 90px;
+    } 
+    .right-main .content #main-2 .myod-activity .true-content div li a{
+        font-size: 10px;
+    }
+    .right-main .content #main-2 .myod-activity .true-content div button{
+        width: 90px;
+        font-size: 4px;
+    }
+    button#step-num{
+        font-size: 4px;
+        margin-left: -25px;
+        margin-top: 5px;
+    }
+    .right-main .content #main-1 .mycl-food ul li a{
+	    width: 50%;
+    }
+}
+/* 针对iPhone4做的响应 */
+@media (min-width:350px) and (max-width:767px){
+     /* 在屏幕宽度小于等于767px时左侧边栏消失 */
+     .container-myself .left-navbar{
+        display: none;
+    }
+    /* 在左侧边栏消失之后，右边自适应宽度区域里面的实际内容存放区域的margin-left值设置为0 */
+    .container-myself .right-main .content{
+        margin-left: 0;
+    }
+    .absolute-hg{
+        display: none;
+    }
+    .btn-container{
+        display: block;
+    }
+    .right-main .content #main-2 .myod-activity .true-content div li{
+        max-width: 140px;
+    }
+    .right-main .content #main-2 .myod-activity .true-content div li a{
+        font-size: 16px;
+    }
+    .right-main .content #main-3 input{
+        width: 200px;
+        height: 30px;
+        border-radius: .2em;
+    }
+    .right-main .content #main-3 #submit{
+        width: 200px;
+        height: 30px;
+        border-radius: .2em;
+    }
+    button#step-num{
+        margin-left: -18px;
+        margin-top: 3px;
+    }
+     .right-main .content #main-1 .mycl-food ul li a{
+	    width: 70%;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .right-main .content #main-3 input{
+        width: 300px;
+        height: 40px;
+        border-radius: .2em;
+    }
+    .right-main .content #main-3 #submit{
+        width: 300px;
+        height: 40px;
+        border-radius: .2em;
+    }
+}
+@media (min-width:992px) and (max-width:1199px){
+    .right-main .content #main-3 input{
+        width: 400px;
+        height: 40px;
+        border-radius: .2em;
+    }
+    .right-main .content #main-3 #submit{
+        width: 400px;
+        height: 40px;
+        border-radius: .2em;
+    }
+}
+@media (min-width:1200px) {
+    .right-main .content #main-3 input{
+        width: 400px;
+        height: 40px;
+        border-radius: .2em;
+    }
+    .right-main .content #main-3 #submit{
+        width: 400px;
+        height: 40px;
+        border-radius: .2em;
+    }
+}

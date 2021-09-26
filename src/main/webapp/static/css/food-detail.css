@@ -1,0 +1,60 @@
+.shelter-container{
+    margin-top: 50px;
+}
+.shelter-container img{
+    max-width: 100%;
+    height: auto;
+}
+.shelter-container .title-bar span#collect:hover{
+    cursor: pointer;
+    color: rgb(3, 233, 3);
+}
+.shelter-container .title-bar span#like span:nth-child(1):hover{
+    cursor: pointer;
+    color: rgb(255, 125, 125);
+}
+.changecolor1{
+    color: rgb(2, 179, 2);
+}
+.changecolor2{
+    color: red;
+}
+hr.title-hr{
+    margin-top: 0;
+}
+.shelter-container .ingredient-section{
+    margin-top: 10px;
+}
+/* 回到顶部按钮样式 */
+#back_top .arrow{
+    border: 9px solid transparent;
+    border-bottom-color: #3DA0DB;
+    width: 0px;
+    height: 0px;
+    top:0px
+}
+#back_top .stick{
+    width: 8px;
+    height: 14px;
+    border-radius: 1px;
+    background-color: #3DA0DB;
+    top:15px;
+}
+#back_top div{
+    position: absolute;
+    margin: auto;
+    right: 0px;
+    left: 0px;
+}
+#back_top{
+    background-color: #dddddd;
+    height: 38px;
+    width: 38px;
+    border-radius: 3px;
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+}

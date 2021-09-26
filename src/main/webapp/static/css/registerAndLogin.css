@@ -1,0 +1,15 @@
+.form-horizontal{
+    margin-top: 50px;
+}
+.shelter-form{
+    margin-bottom: 0;
+}
+.shelter-tip{
+    height: 22px;
+    font-size: 14px;
+    color: red;
+}
+p.goToAnotherPage{
+    padding-left: 5px;
+    padding-right: 5px;
+}
